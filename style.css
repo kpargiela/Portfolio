@@ -168,6 +168,7 @@ nav:before {
 
 .menu-item {
   display: flex;
+  /*display: none;*/
   align-self: center;
   text-align: center;
   font-size: 2em;
@@ -186,10 +187,22 @@ nav:before {
 
 .menu-item .icon {
   order: 1;
+  /*display: flex;*/
   display: flex;
   justify-content: center;
   transition: all 0.6s;
+  opacity: 0;
+  transform: scale(0);
 }
+
+.menu-item .icon.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*.menu-item.animate {
+  display: flex;
+}*/
 
 .contact {
   width: 30%;
