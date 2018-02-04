@@ -1,3 +1,3 @@
-widow.onload = function() {
+window.onload = function() {
   console.log(menuItem);
 }();
