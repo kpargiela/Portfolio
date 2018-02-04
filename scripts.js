@@ -1,12 +1,14 @@
 window.onload = function() {
 
-  let animationDuration = 2000; // 2000 millieseconds
+  let animationDuration = 600; // 2000 millieseconds
 
-  function animateItems() {
-     menuItem.each(function(i, item) {
-        setTimeout(function(){
-          item.addClass('animate');
-        }, i * animationDuration); // this multiplies the index by the duration so the handler is fired in sequence
-     });
+  function animate(i) {
+    setTimeout(function() {
+      dockIcons[i].classList.add('animate');
+    }, (i + 1) * animationDuration);
   }
+
+  for (var i = 0; i < dockIcons.length; i++)
+    animate(i);
+
 }();
