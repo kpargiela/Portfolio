@@ -42,8 +42,8 @@ section {
 }
 
 .close.visible {
-  /*bottom: 10px;*/
-  transform: translateY(-10px);
+  bottom: 10px;
+  /*transform: translateY(-10px);*/
   z-index: 10;
 }
 
