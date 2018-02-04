@@ -1,6 +1,6 @@
 window.onload = function() {
 
-  let animationDuration = 20000; // 2000 millieseconds
+  let animationDuration = 2000; // 2000 millieseconds
 
   function animateItems() {
      menuItem.each(function(i, item) {
