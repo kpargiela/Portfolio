@@ -1,0 +1,3 @@
+:Location *.(gif|jpg|png)
+Expires M2592000
+:Location

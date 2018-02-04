@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Kamil Pargieła - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <script src="https://use.fontawesome.com/a60f1fef8f.js"></script>
+</head>
+
+<body>
+
+  <section class="landing-page">
+    <div class="wrapper">
+      <!-- <span>Choose web technology icon below</span>
+      <span>to see my experience in practice</span> -->
+    </div>
+  </section>
+  <section class="html5">
+    <button class="btn close">&times;</button>
+    <div class="wrapper">
+      <!-- <div class="site gombrowicz">
+        <div class="screen">
+          <img src="img/profile.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="title">
+            <span>Gombrowicz Desampare</span>
+          </div>
+          <div class="description">
+            <p>Simple landing page announcing conference about Polish writer <br> Witold Gombrowicz</p>
+            <a href="http://gombrowiczdesempare.com/index.html.bak.bak" target="_blank">Open website</a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    </div>
+  </section>
+  <section class="wordpress">
+    <!-- <iframe class="thebigpicture" src="http://thebigpicture.pl" width="100%" height="100%"></iframe>
+    <iframe class="hardbacon" src="http://hardbacon.ca" width="100%" height="100%"></iframe> -->
+    <button class="btn close">&times;</button>
+    <div class="wrapper">
+      <div class="site hardbacon">
+        <div class="screen">
+          <img src="img/hardbacon-logo.png" alt="">
+        </div>
+        <div class="content">
+          <div class="title">
+            <span>Hardbacon</span>
+          </div>
+          <div class="description">
+            <p>Hardbacon: We make stock market investing simple for everyone</p>
+            <a href="#">Live preview</a>
+            <span href="#">More details</span>
+          </div>
+        </div>
+      </div>
+      <div class="site thebigpicture">
+        <div class="screen">
+          <img src="http://thebigpicture.pl/wp-content/uploads/2017/08/logo-thebigpicture.png" alt="">
+        </div>
+        <div class="content">
+          <div class="title">
+            <span>The Big Picture</span>
+          </div>
+          <div class="description">
+            <p>Photography Agency</p>
+            <a href="#">Live preview</a>
+            <span href="#">More details</span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="sites-grid">
+        <div class="site">
+        </div>
+        <div class="site">
+        </div>
+        <div class="site">
+        </div>
+        <div class="site">
+        </div> -->
+    </div>
+    </div>
+  </section>
+  <nav>
+    <div class="menu">
+      <button class="btn about-me">
+        <!-- <span>About me</span> -->
+        <!-- <div class="avatar-overlay"></div> -->
+        <img class="avatar" src="img/avatar.jpg" alt="">
+      </button>
+      <div class="menu-items">
+        <span class="menu-item html5">
+            <i class="label">HTML5</i>
+            <i class="icon devicon-html5-plain"></i>
+          </span>
+        <!-- <span class="menu-item css3">
+            <i class="label">CSS3</i>
+            <i class="icon devicon-css3-plain"></i>
+          </span> -->
+        <span class="menu-item">
+            <i class="label">Javascript</i>
+            <i class="icon devicon-javascript-plain"></i>
+          </span>
+        <span class="menu-item">
+            <i class="label">React</i>
+            <i class="icon devicon-react-original"></i>
+          </span>
+        <span class="menu-item wordpress">
+            <i class="label">Wordpress</i>
+            <i class="icon devicon-wordpress-plain"></i>
+          </span>
+      </div>
+      <div class="contact">
+        <a href="https://github.com/kpargiela" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/kamil-pargieła-73110197" target="_blank">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="skype:killuminati.777?userinfo">
+          <i class="fa fa-skype" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:kpargiela7@gmail.com">
+          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    // class ShapeOverlays {
+    //   constructor(elm) {
+    //     this.elm = elm; // Parent SVG element.
+    //     this.path = elm.querySelectorAll('path'); // Path elements in parent SVG. These are the layers of the overlay.
+    //     this.numPoints = 18; // Number of control points for Bezier Curve.
+    //     this.duration = 600; // Animation duration of one path element.
+    //     this.delayPointsArray = []; // Array of control points for Bezier Curve.
+    //     this.delayPointsMax = 300; // Max of delay value in all control points.
+    //     this.delayPerPath = 60; // Delay value per path.
+    //     this.timeStart = Date.now();
+    //     this.isOpened = false;
+    //   }
+    // }
+    // const elmOverlay = document.querySelector('.shape-overlays');
+    // const overlay = new ShapeOverlays(elmOverlay);
+
+    let currentWrapper = document.querySelector('.active');
+    let menu = document.querySelector('.menu');
+    let menuItem = document.querySelectorAll('.menu-item');
+    let dockIcons = document.querySelectorAll('.icon');
+    let dockLabels = document.querySelectorAll('.label');
+    let sections = document.getElementsByTagName('section');
+    let close = document.querySelector('.close');
+
+    let aboutMe = document.querySelector('.about-me');
+    let avatarOverlay = document.querySelector('.avatar-overlay');
+    let avatarPic = document.querySelector('.about-me img');
+    let aboutLabel = document.querySelector('.about-me span:first-child');
+    let meLabel = document.querySelector('.about-me span:last-child');
+
+    let sectionHtml = document.querySelector('section.html5');
+    let closeHtmlBtn = sectionHtml.querySelector('.close');
+
+    let sectionWordpress = document.querySelector('section.wordpress');
+    let closeWordpressBtn = sectionWordpress.querySelector('.close');
+
+    let sectionLanding = document.querySelector('section.landing-page');
+
+    let menuItemHtml = document.querySelector('.menu-item.html5');
+    let menuItemWordpress = document.querySelector('.menu-item.wordpress');
+
+    let wordpressLabel = menuItemWordpress.querySelector('.label');
+
+    menuItemHtml.addEventListener('click', showHtml);
+    closeHtmlBtn.addEventListener('click', closeHtml);
+
+    menuItemWordpress.addEventListener('click', showWordpress);
+    closeWordpressBtn.addEventListener('click', closeWordpress);
+
+    function showHtml() {
+      // ShapeOverlays.toggle();
+      sectionWordpress.classList.remove('active');
+      sectionWordpress.style.visibility = "hidden";
+      sectionLanding.style.visibility = "hidden";
+      sectionHtml.classList.add('active');
+      sectionHtml.style.visibility = 'visible';
+    }
+
+    function closeHtml() {
+      sectionLanding.style.visibility = "visible";
+      sectionHtml.classList.remove('active');
+    }
+
+    let boxHardbacon = sectionWordpress.querySelector('.hardbacon');
+    let boxTheBigPicture = sectionWordpress.querySelector('.thebigpicture');
+
+    function showWordpress() {
+      wordpressLabel.style.visibility = 'visible';
+      sectionHtml.classList.remove('active');
+      sectionHtml.style.visibility = "hidden";
+      sectionLanding.style.visibility = "hidden";
+      menu.classList.add('hidden');
+      sectionWordpress.classList.add('active');
+      sectionWordpress.style.visibility = 'visible';
+      closeWordpressBtn.classList.add('visible');
+      avatarPic.style.transform = 'translateY(-50px)';
+      sectionLanding.querySelector('.wrapper').classList.remove('zoom-in')
+      boxHardbacon.classList.add('visible');
+      boxTheBigPicture.classList.add('visible');
+    }
+
+    function closeWordpress() {
+      sectionLanding.style.visibility = "visible";
+      sectionLanding.querySelector('.wrapper').classList.add('zoom-in')
+      sectionWordpress.classList.remove('active');
+      menu.classList.remove('hidden');
+      closeWordpressBtn.classList.remove('visible');
+      avatarPic.style.transform = 'translateY(10px)';
+      boxHardbacon.classList.remove('visible');
+      boxTheBigPicture.classList.remove('visible');
+    }
+
+    closeWordpressBtn.addEventListener('click', closeHardbacon);
+    let frameHardbacon = document.createElement('iframe');
+    frameHardbacon.setAttribute('src', 'https://hardbacon.ca');
+    frameHardbacon.classList.add('hardbacon');
+    let linkHardbacon = document.querySelector('.hardbacon a');
+
+    linkHardbacon.addEventListener('click', openHardbacon);
+
+    function openHardbacon() {
+      frameHardbacon.classList.add('frame');
+      sectionWordpress.appendChild(frameHardbacon);
+    }
+
+    function closeHardbacon() {
+      frameHardbacon.remove();
+    }
+
+    closeWordpressBtn.addEventListener('click', closeTheBigPicture);
+
+    let frameTheBigPicture = document.createElement('iframe');
+    frameTheBigPicture.setAttribute('src', 'http://thebigpicture.pl');
+    frameTheBigPicture.classList.add('thebigpicture');
+    let linkTheBigPicture = document.querySelector('.thebigpicture a');
+
+    linkTheBigPicture.addEventListener('click', openTheBigPicture);
+
+    function openTheBigPicture() {
+      sectionWordpress.appendChild(frameTheBigPicture);
+      frameTheBigPicture.classList.add('frame');
+    }
+
+    function closeTheBigPicture() {
+      frameTheBigPicture.remove();
+    }
+
+    for (let i = 0; i < menuItem.length; i++) {
+
+      let item = menuItem[i];
+    }
+    for (let h = 0; h < dockIcons.length; h++) {
+
+      console.log(dockIcons[h]);
+
+      dockIcons[h].addEventListener('mouseover', rotateIcon);
+      dockIcons[h].addEventListener('mouseout', unrotateIcon);
+
+      function rotateIcon() {
+        dockIcons[h].classList.add('rotate');
+      }
+
+      function unrotateIcon() {
+        dockIcons[h].classList.remove('rotate');
+      }
+    }
+
+    menu.addEventListener("mouseover", showLabel);
+    menu.addEventListener("mouseout", hideLabel);
+
+    function showLabel() {
+      for (let i = 0; i < dockLabels.length; i++) {
+        dockLabels[i].style.visibility = "visible";
+      }
+    }
+
+    function hideLabel() {
+      for (let i = 0; i < dockLabels.length; i++) {
+        dockLabels[i].style.visibility = "hidden";
+        if (dockLabels[i] == wordpressLabel) {
+          dockLabels[i].style.visibility = 'visible';
+        }
+      }
+    }
+
+    aboutMe.addEventListener('click', spinOverlay, spinAvatar);
+
+    function spinOverlay() {
+      avatarOverlay.style.transform = 'rotateY(90deg)';
+      aboutLabel.style.transform = 'rotateY(90deg)';
+      meLabel.style.transform = 'rotateY(90deg)';
+      avatarPic.style.transform = 'rotateX(0deg)';
+    }
+
+    function spinAvatar() {
+      avatarPic.style.transform = 'rotateX(0deg)';
+    }
+  </script>
+</body>
+
+</html>
