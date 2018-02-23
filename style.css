@@ -252,7 +252,6 @@ nav:before {
 
 .content {
   background: rgba(0,0,0,0.5);
-  margin: 0 20%;
   padding: 0;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -309,11 +308,10 @@ nav:before {
 }
 
 .screen img {
-  width: 50%;
+  object-fit: contain;
   height: auto;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  margin-bottom: -4px;
 }
 
 /* Wordpress section */
