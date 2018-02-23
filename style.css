@@ -233,10 +233,8 @@ nav:before {
 }
 
 .site {
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;*/
-  margin: auto 0;
+  width: 20vw;
+  margin: auto 5%;
 }
 
 .gombrowicz {
@@ -291,7 +289,23 @@ nav:before {
   background: rgba(76,191,229,0.3);
 }
 
+.hardbacon .screen {
+  background: #0cc;
+}
+
+.przemyslawszymanowski .screen {
+  background: #000;
+}
+
+.thebigpicture .screen {
+  background: #fff;
+}
+
 .screen {
+  height: 240px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .screen img {
@@ -336,16 +350,16 @@ nav:before {
   background-size: cover;
 }
 
-/* The Big Picture */
-
-.thebigpicture .screen img {
-  padding: 10% 5%;
-  background-color: #fff;
+.hardbacon .screen img {
+    height: 40%;
 }
 
-.hardbacon .screen img {
-  background: #0cc;
-  padding: 10% 5%;
+.przemyslawszymanowski .screen img {
+    height: 70%;
+}
+
+.thebigpicture .screen img {
+    height: 35%;
 }
 
 /*.sites-grid {
